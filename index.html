@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система комментариев</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header"></header>
+        <main class="main_comment">
+            <div class="sidebar"></div>
+            <div class="comments">
+                <div class="title_comments">
+                    <ul class="title_block-items">
+                        <li class="title_block-item"></li>
+                        <li class="title_block-item"></li>
+                        <li class="title_block-item"></li>
+                        <li class="title_block-item"></li>
+                        <li class="title_block-item"></li>
+                        <li class="title_block-item"></li>
+                        <li class="title_block-item"></li>
+                        <li class="title_block-item"></li>
+                    </ul>
+                    <div class="title_main-block"></div>
+                </div>
+                <div class="block_comments">
+                    <div class="block_tabs">
+                        <div class="block-main_tabs">
+                            <a href="#" class="block-main_tabs_link">Комментарии <span>(80)</span></a>
+                        </div>
+                        <ul class="comments_tabs">
+                            <li class="comments_tab-item">
+                                <div class="comments_tab-select">
+                                    <select>
+                                        <option value="По дате">По дате</option>
+                                        <option value="По количеству оценок">По количеству оценок</option>
+                                        <option value="По актуальности">По актуальности</option>
+                                        <option value="По количеству ответов">По количеству ответов</option>
+                                    </select>
+                                    <div class="comments_tab-arrow"></div>
+                                </div>
+                            </li>
+                            <li class="comments_tab-item">
+                                <a href="#" class="comments_tab-link">Избранное</a>
+                                <img src="./images/love.svg" alt="like" class="comments_tab-link-icon">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="comment_input">
+                        <img src="./images/max.png" alt="avatar" class="comment_avatar">
+                        <div class="comment_text-block">
+                            <div class="comment-text_group">
+                                <h3 class="comment_text-name">Максим Авдеенко</h3>
+                                <p class="comment_text-max">Макс. 1000 символов</p>
+                            </div>              
+                            <textarea type="text" class="comment_text-input" placeholder="Введите текст сообщения..."></textarea>
+                        </div>
+                        <div class="comment-group_active">
+                            <p class="comment-group_error">Слишком длинное сообщение</p>
+                            <button type="button" class="comment_text-send">Отправить</button>
+                        </div>                        
+                    </div>
+                    <div class="comment_user">
+                        <img src="./images/alex.png" alt="user" class="comment_user-avatar">
+                        <div class="comment_user-group">
+                            <div class="comment_user-block">
+                                <h3 class="comment_user-name">Алексей_1994b</h3>
+                                <p class="comment_user-data">15.01 13:55</p>
+                            </div>
+                            <p class="comment_user-text">Самое обидное когда сценарий по сути есть - в виде книг, где нет сюжетных дыр, всё логично, стройное повествование и 
+                                достаточно взять и экранизировать оригинал как это было в первых фильмах с минимальным количеством отсебятины и зритель 
+                                с восторгом примет любой такой фильм и сериал, однако вместо этого 'Кольца власти' просто позаимствовали имена из 
+                                оригинала, куски истории, мало связанные между собой и выдали очередной среднячковый сериал на один раз в лучшем случае.
+                            </p>
+                            <div class="comment_elect">
+                                <div class="comment_elect-arrow">
+                                    <img src="./images/arrow.png" alt="arrow" class="comment_elect-arrow-image" style="opacity: 0.4;">
+                                    <p class="comment_elect-arrow-text">Ответить</p>
+                                </div>
+                                <div class="comment_elect-arrow">
+                                    <img src="./images/mask.png" alt="icon" class="comment_elect-arrow-image">
+                                    <p class="comment_elect-arrow-text">В избранном</p>
+                                </div>
+                                <div class="comment_elect-count">
+                                    <i class="comment_elect-count-minus">-</i>
+                                    <p class="comment_elect-count-text">6</p>
+                                    <i class="comment_elect-count-plus">+</i>
+                                </div>
+                            </div>
+                            <div class="comment_user-elect">
+                                <img src="./images/joun.png" alt="user" class="comment_user-avatar">
+                                <div class="comment_user-group">
+                                    <div class="comment_user-block">
+                                        <h3 class="comment_user-name">Джунбокс3000</h3>
+                                        <div class="comment_elect-arrow">
+                                            <img src="./images/arrow.png" alt="arrow" class="comment_elect-arrow-image" style="opacity: 0.4;">
+                                            <p class="comment_elect-arrow-text">Алексей_1994b</p>
+                                        </div>
+                                        <p class="comment_user-data">15.01 15:18</p>
+                                    </div>
+                                    <p class="comment_user-text">Наверное, самая большая ошибка создателей сериала была в том, что они поставили 
+                                        уж слишком много надежд на поддержку фанатов вселенной. Как оказалось на деле, большинство 'фанатов' с 
+                                        самой настоящей яростью и желчью стали уничтожать сериал, при этом объективности в отзывах самый 
+                                        минимум.
+                                    </p>
+                                    <div class="comment_elect">
+                                        <div class="comment_elect-arrow">
+                                            <img src="./images/heart.png" alt="icon" class="comment_elect-arrow-image" style="opacity: 0.4; width: 17px; height: 17px;">
+                                            <p class="comment_elect-arrow-text">В избранное</p>
+                                        </div>
+                                        <div class="comment_elect-count">
+                                            <i class="comment_elect-count-minus">-</i>
+                                            <p class="comment_elect-count-text">3</p>
+                                            <i class="comment_elect-count-plus">+</i>
+                                        </div>
+                                    </div>
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
